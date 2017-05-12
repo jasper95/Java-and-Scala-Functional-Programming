@@ -29,12 +29,13 @@ class Functional{
 
         Function<Integer, Function<Integer, Integer>> makeAdder = x -> y -> x + y;
         //Function<Integer, Function<Integer, Integer>> makeAdder = Functional::adder;
+
         Function<Integer, Integer> add2Curry = makeAdder.apply(2); //makeAdder 2
 
 
 
         System.out.println(String.format("Currying Function --- add2Curry.apply(8) = %d", add2Curry.apply(8))); // 10
-        System.out.println(String.format("Function Application--- makeAdder.apply(2).apply(8) = %d", makeAdder.apply(2).apply(8))); //makeAdder 2 8 = 10
+        System.out.println(String.format("Function Application --- makeAdder.apply(2).apply(8) = %d", makeAdder.apply(2).apply(8))); //makeAdder 2 8 = 10
 
     }
 

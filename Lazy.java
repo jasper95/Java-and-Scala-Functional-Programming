@@ -18,14 +18,14 @@ class Lazy {
 
         //int test = compute();
 
-        Supplier<Integer> test = () -> compute();
+        //Supplier<Integer> test = () -> compute();
         // SomeInterface<Integer> test = new SomeInterface<Integer>(){
         //     @Override
         //     public Integer get(){
         //         return compute();
         //     }
         // };
-        //SomeInterface<Integer> test = () -> compute();
+        SomeInterface<Integer> test = () -> compute();
 
 
         if(a > 5 && test.get() > 5){
