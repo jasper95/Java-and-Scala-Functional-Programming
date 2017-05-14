@@ -4,7 +4,7 @@ def compute(): Int = {
 }
 
 val a = 4
-val test = compute()
+lazy val test = compute()
 
 if(a > 5 && test > 5){
     println("inside if")
