@@ -23,7 +23,7 @@ class Functional{
         Function<Integer,Integer> add5Composed = compose.apply(add2, add3);
 
         System.out.println(String.format("Simple Function --- add2.apply(8) = %d", add2.apply(8))); //10
-        System.out.println(String.format("Function<T,R> Compositiopn using BinaryOperator --- add5Composed.apply(5)) = %d", add5Composed.apply(5))); //10
+        System.out.println(String.format("Function<T,R> Compositiopn using BinaryOperator<Function> --- add5Composed.apply(5)) = %d", add5Composed.apply(5))); //10
         System.out.println(String.format("Function<T,R> Composition using .compose() --- add3.compose(add2).apply(5)) = %d", add3.compose(add2).apply(5)) ); //10
 
 

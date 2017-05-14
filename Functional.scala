@@ -6,8 +6,8 @@ val compose = (f : Int => Int, g: Int => Int) => (x : Int) => g(f(x))
 val add5Composed = compose(add2, add3)
 
 println("Simple Function --- add2(8) = %d".format(add2(8)))
-println("Function composition using compose --- add5Composed(5) = %d".format(add5Composed(5)))
-
+println("Function composition using BinaryOperator<Function> --- add5Composed(5) = %d".format(add5Composed(5)))
+println("Function Composition using .compose() --- add3.compose(add2)(5) = %d".format(add3.compose(add2)(5))); //10
 
 val adder = (y : Int) => (x : Int) => x + y
 val add2Curry = adder(2)
